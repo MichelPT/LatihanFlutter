@@ -126,8 +126,4 @@ Future<String> line1() {
  Future<void> line3() {
  return Future.delayed(Duration(seconds: 1), () => print("di langit yang biru"));
  }
-<<<<<<< HEAD
  */
-=======
- */
->>>>>>> a4d3464d09d949a583e3b507dd770a22c1e14629

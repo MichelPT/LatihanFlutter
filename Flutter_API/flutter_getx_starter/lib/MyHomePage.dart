@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -9,17 +8,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var name = "damn good".obs;
+  var name = "damn good";
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       title: "GetX Testing",
       home: Scaffold(
         appBar: AppBar(title: Text("GetX")),
         body: ListView(
           children: [
-            Obx(() => Text("hehe"))
+            Container(
+              child: Text(name)
+            )
           ],
         ),
       ),
